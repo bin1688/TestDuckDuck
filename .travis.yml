@@ -1,7 +1,13 @@
-language: python
-python:
-  -"3.6"
-  -"nightly"
-install:
-  -"pip install pytest"
-  -"pip install -r requirements.txt"
+{
+  "language": "python",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "python": [
+    "-\"3.6\" -\"nightly\""
+  ],
+  "install": [
+    "-\"pip install pytest\" -\"pip install -r requirements.txt\""
+  ]
+}
