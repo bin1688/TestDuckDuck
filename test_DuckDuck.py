@@ -67,7 +67,7 @@ for i in range(len(response["RelatedTopics"])):
     if response["RelatedTopics"][i]['FirstURL'].split('/')[-1].split('_')[-1] in actualLastName:
         presidentLastNamesFromResponse.append(response["RelatedTopics"][i]['FirstURL'].split('/')[-1].replace('_', ' ').split(' ')[-1])
 
-
+# use actual the actual presidents' last as input value to test with the last names collected from duckduckgo.com
 @pytest.mark.parametrize("actualPresidentLastName", ['Adams', 'Adams', 'Buchanan',
                                        'Buren', 'Bush', 'Bush', 'Carter',
                                        'Cleveland', 'Clinton', 'Coolidge',
