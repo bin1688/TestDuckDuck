@@ -9,7 +9,7 @@ presidentLastNamesFromResponse = []
 for president in response["RelatedTopics"]:
     presidentLastNamesFromResponse.append(president['FirstURL'].split('/')[-1].replace('_', ' ').split(' ')[-1])
 
-# use actual the actual presidents' last as input value to test with the last names collected from duckduckgo.com
+# use actual presidents' last names as an input value to test with the last names collected from duckduckgo.com
 @pytest.mark.parametrize("actualPresidentLastName", ['Adams', 'Adams', 'Buchanan',
                                        'Buren', 'Bush', 'Bush', 'Carter',
                                        'Cleveland', 'Clinton', 'Coolidge',
